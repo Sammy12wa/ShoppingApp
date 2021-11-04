@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_shobiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dawcyn.common.Shobiz">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorGlobal"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/toolbar_shop">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar_shop"
+        android:layout_height="match_parent">
+
+
+
+ <LinearLayout
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+
+     <FrameLayout
+         android:layout_width="wrap_content"
+         android:id="@+id/frameLogo"
+         android:layout_gravity="center_horizontal"
+         android:layout_height="wrap_content">
+
+         <FrameLayout
+             android:layout_gravity="center_horizontal|center_vertical"
+             android:layout_width="wrap_content"
+             android:layout_marginTop="5dp"
+             android:layout_marginStart="5dp"
+             android:layout_marginEnd="5dp"
+             android:layout_height="wrap_content">
+
+             <LinearLayout
+                 android:orientation="vertical"
+                 android:layout_gravity="center_vertical|center_horizontal"
+                 android:layout_width="400dp"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:background="#d0a"
+                     android:layout_height="1dp" />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:background="#d0a"
+                     android:layout_marginTop="@dimen/activity_margin_top"
+                     android:layout_height="1dp" />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:background="#d0a"
+                     android:layout_marginTop="@dimen/activity_margin_top"
+                     android:layout_height="1dp" />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:background="#d0a"
+                     android:layout_marginTop="@dimen/activity_margin_top"
+                     android:layout_height="1dp" />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:background="#d0a"
+                     android:layout_marginTop="@dimen/activity_margin_top"
+                     android:layout_height="1dp" />
+
+             </LinearLayout>
+
+
+         </FrameLayout>
+
+         <FrameLayout
+             android:layout_marginStart="25dp"
+             android:layout_width="match_parent"
+             android:layout_height="140dp">
+
+             <LinearLayout
+                 android:orientation="horizontal"
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent">
+                 <TextView
+                     android:layout_width="10dp"
+                     android:background="#0affff"
+                     android:layout_marginTop="10dp"
+                     android:layout_height="match_parent" />
+
+
+                 <TextView
+                     android:layout_width="10dp"
+                     android:background="@color/colorGlobal"
+                     android:layout_marginStart="@dimen/activity_margin_start"
+                     android:layout_marginBottom="15dp"
+                     android:layout_height="match_parent" />
+
+                 <TextView
+                     android:layout_width="10dp"
+                     android:background="#00affa"
+                     android:layout_marginTop="10dp"
+                     android:layout_marginStart="@dimen/activity_margin_start"
+                     android:layout_height="match_parent" />
+             </LinearLayout>
+
+         </FrameLayout>
+
+         <FrameLayout
+             android:layout_width="match_parent"
+             android:layout_gravity="end|center_vertical|center_horizontal"
+             android:layout_marginStart="90dp"
+             android:layout_marginTop="5dp"
+             android:layout_marginEnd="15dp"
+             android:padding="5dp"
+             android:background="#fff"
+             android:layout_height="wrap_content">
+             <LinearLayout
+                 android:orientation="vertical"
+                 android:layout_width="match_parent"
+                 android:layout_gravity="center_horizontal|center_vertical"
+                 android:layout_height="match_parent">
+                 <TextView
+                     android:layout_gravity="center_horizontal|center_vertical"
+                     android:textStyle="bold"
+                     android:textSize="20sp"
+                     android:textColor="#00a"
+                     android:text="~TELEFONICA GH~"
+                     tools:ignore="HardcodedText"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+                 <TextView
+                     android:layout_gravity="end|center_horizontal|center_vertical"
+                     android:textSize="12sp"
+                     android:textColor="#424242"
+                     android:textAlignment="center"
+                     android:text="Best dealers in computers &amp; more!"
+                     tools:ignore="HardcodedText"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content" />
+             </LinearLayout>
+         </FrameLayout>
+
+
+
+     </FrameLayout>
+
+     <FrameLayout
+         android:layout_width="match_parent"
+         android:id="@+id/frameLogo1"
+         android:layout_gravity="center_horizontal"
+         android:layout_height="100dp">
+
+         <FrameLayout
+             android:layout_gravity="center_horizontal|center_vertical"
+             android:layout_width="wrap_content"
+             android:layout_marginTop="5dp"
+             android:layout_marginStart="5dp"
+             android:layout_marginEnd="5dp"
+             android:layout_height="wrap_content">
+
+             <LinearLayout
+                 android:orientation="vertical"
+                 android:layout_gravity="center_vertical|center_horizontal"
+                 android:layout_width="400dp"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:background="#d0a"
+                     android:layout_height="1dp" />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:background="#d0a"
+                     android:layout_marginTop="@dimen/activity_margin_top"
+                     android:layout_height="1dp" />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:background="#d0a"
+                     android:layout_marginTop="@dimen/activity_margin_top"
+                     android:layout_height="1dp" />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:background="#d0a"
+                     android:layout_marginTop="@dimen/activity_margin_top"
+                     android:layout_height="1dp" />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:background="#d0a"
+                     android:layout_marginTop="@dimen/activity_margin_top"
+                     android:layout_height="1dp" />
+
+             </LinearLayout>
+
+
+         </FrameLayout>
+
+
+
+         <FrameLayout
+             android:layout_width="match_parent"
+             android:layout_gravity="center_vertical|center"
+             android:layout_marginTop="5dp"
+             android:layout_marginEnd="20dp"
+             android:layout_marginStart="20dp"
+             android:background="#fff"
+             android:layout_height="wrap_content">
+             <LinearLayout
+                 android:orientation="vertical"
+                 android:layout_width="match_parent"
+                 android:layout_gravity="center_horizontal|center_vertical"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     android:layout_gravity="center_horizontal|center_vertical"
+                     android:textStyle="bold"
+                     android:textSize="20sp"
+                     android:textColor="#00a"
+                     android:text="~TELEFONICA GH~"
+                     tools:ignore="HardcodedText"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+                 <TextView
+                     android:layout_gravity="end|center_horizontal|center_vertical"
+                     android:textSize="12sp"
+                     android:textColor="#424242"
+                     android:textAlignment="center"
+                     android:text="Best dealers in computers &amp; more!"
+                     tools:ignore="HardcodedText"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content" />
+             </LinearLayout>
+         </FrameLayout>
+
+
+
+     </FrameLayout>
+
+     <FrameLayout
+         android:layout_width="match_parent"
+         android:id="@+id/frameLogo2"
+         android:layout_gravity="center_horizontal"
+         android:layout_height="100dp">
+
+         <FrameLayout
+             android:layout_gravity="center_horizontal|center_vertical"
+             android:layout_width="wrap_content"
+             android:layout_marginTop="5dp"
+             android:layout_marginStart="5dp"
+             android:layout_marginEnd="5dp"
+             android:layout_height="wrap_content">
+
+             <LinearLayout
+                 android:orientation="vertical"
+                 android:layout_gravity="center_vertical|center_horizontal"
+                 android:layout_width="400dp"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:background="#d0a"
+                     android:layout_height="1dp" />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:background="#d0a"
+                     android:layout_marginTop="@dimen/activity_margin_top"
+                     android:layout_height="1dp" />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:background="#d0a"
+                     android:layout_marginTop="@dimen/activity_margin_top"
+                     android:layout_height="1dp" />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:background="#d0a"
+                     android:layout_marginTop="@dimen/activity_margin_top"
+                     android:layout_height="1dp" />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:background="#d0a"
+                     android:layout_marginTop="@dimen/activity_margin_top"
+                     android:layout_height="1dp" />
+
+             </LinearLayout>
+
+
+         </FrameLayout>
+
+
+
+         <FrameLayout
+             android:layout_width="match_parent"
+             android:layout_gravity="center_vertical|center"
+             android:layout_marginTop="5dp"
+             android:layout_marginEnd="20dp"
+             android:elevation="-1dp"
+             android:layout_marginStart="20dp"
+             android:background="#fff"
+             android:layout_height="wrap_content">
+             <LinearLayout
+                 android:orientation="vertical"
+                 android:layout_width="match_parent"
+                 android:layout_gravity="center_horizontal|center_vertical"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     android:layout_gravity="center_horizontal|center_vertical"
+                     android:textStyle="bold"
+                     android:textSize="20sp"
+                     android:textColor="#00a"
+                     android:text="~TELEFONICA GH~"
+                     tools:ignore="HardcodedText"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+                 <TextView
+                     android:layout_gravity="end|center_horizontal|center_vertical"
+                     android:textSize="12sp"
+                     android:textColor="#424242"
+                     android:textAlignment="center"
+                     android:text="Best dealers in computers &amp; more!"
+                     tools:ignore="HardcodedText"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content" />
+             </LinearLayout>
+         </FrameLayout>
+
+
+
+     </FrameLayout>
+
+ </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

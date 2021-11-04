@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Profile"
+        android:visible="false"
+        android:id="@+id/profile"/>
+    <item
+        android:title="Exit"
+        android:visible="false"
+        android:id="@+id/exit"
+        />
+    <item
+        android:title=""
+        android:id="@+id/savedProduct"
+        android:icon="@drawable/full_saved"
+        app:showAsAction="always"
+        />
+
+    <group android:menuCategory="alternative">
+        <item
+            android:title=""
+            android:id="@+id/shop_cart"
+            android:icon="@drawable/empty_cart"
+            app:showAsAction="ifRoom"
+            />
+
+    </group>
+
+</menu>

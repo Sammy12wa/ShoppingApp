@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_shop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dawcyn.common.Shop">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorGlobal"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/toolbar_shop">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar_shop"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/panelNavigation"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:id="@+id/panelSlider"
+                    android:background="#fff"
+                    android:layout_height="wrap_content">
+                    <ViewFlipper
+                        android:id="@+id/v_flipper"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_below="@+id/panelSlider"
+                    android:orientation="horizontal"
+                    android:onClick="onClickTransition"
+                    android:background="#fff"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:stretchColumns="*"
+                        android:id="@+id/tableNavigator"
+                        android:shrinkColumns="*"
+                        android:layout_height="wrap_content">
+                        <TableRow>
+
+                            <LinearLayout  android:orientation="vertical">
+                                <ImageView
+                                    android:src="@drawable/shirt48"
+                                    android:layout_gravity="center"
+                                    android:onClick="onClickShirtsStore"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:text="TShirts"
+                                    tools:ignore="HardcodedText"
+                                    android:textStyle="bold"
+                                    android:onClick="onClickShirtsStore"
+                                    android:layout_marginTop="2dp"
+                                    android:textAlignment="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+                            <LinearLayout  android:orientation="vertical">
+                                <ImageView
+                                    android:src="@drawable/jeans48"
+                                    android:layout_gravity="center"
+                                    android:onClick="onClickJeansStore"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:text="Jeans"
+                                    tools:ignore="HardcodedText"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="2dp"
+                                    android:onClick="onClickJeansStore"
+                                    android:textAlignment="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+                            <LinearLayout  android:orientation="vertical">
+                                <ImageView
+                                    android:src="@drawable/shoe48"
+                                    android:layout_gravity="center"
+                                    android:onClick="onClickShoesStore"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:text="Shoes"
+                                    tools:ignore="HardcodedText"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="2dp"
+                                    android:onClick="onClickShoesStore"
+                                    android:textAlignment="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+                            <LinearLayout  android:orientation="vertical">
+                                <ImageView
+                                    android:src="@drawable/slipper48"
+                                    android:layout_gravity="center"
+                                    android:onClick="onClickSlippersStore"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:text="Slippers"
+                                    tools:ignore="HardcodedText"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="2dp"
+                                    android:onClick="onClickSlippersStore"
+                                    android:textAlignment="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <LinearLayout  android:orientation="vertical">
+                                <ImageView
+                                    android:src="@drawable/bags48"
+                                    android:layout_gravity="center"
+                                    android:onClick="onClickBagsStore"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:text="Bags"
+                                    tools:ignore="HardcodedText"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="2dp"
+                                    android:onClick="onClickBagsStore"
+                                    android:textAlignment="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ListView
+                android:layout_below="@id/panelNavigation"
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

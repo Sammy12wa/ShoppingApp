@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:stretchColumns="*"
+        android:id="@+id/tableContents"
+        android:shrinkColumns="*"
+        android:layout_height="wrap_content">
+        <TableRow>
+
+            <FrameLayout
+                android:id="@+id/frameProductIcon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgProductIcon"
+                    android:scaleType="fitXY"
+                    android:padding="5dp"
+                    android:layout_width="100dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="100dp"
+                    tools:ignore="ContentDescription" />
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/panelQuantity"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+                    <TextView
+                        android:text="Hold Waist"
+                        tools:ignore="HardcodedText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#536DFE"
+                        android:id="@+id/tvProductName" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/panelQuantity"
+                    android:id="@+id/imageView"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="¢"
+                            android:textStyle="bold"
+                            android:paddingLeft="2dp"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="22sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/tvPrice"
+                            android:text="15.25"
+                            android:textAlignment="center"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="19sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tvCode"
+                    android:visibility="gone"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

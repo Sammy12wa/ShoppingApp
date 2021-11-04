@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_product"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dawcyn.africdecoration.EditProduct">
+    <FrameLayout
+        android:background="@color/colorGlobal"
+        android:id="@+id/frameHeader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="Edit product"
+            tools:ignore="HardcodedText,RtlHardcoded"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/ok1"
+            android:layout_gravity="end|center_vertical"
+            android:padding="10dp"
+            android:onClick="onClickSaveProductDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/frameHeader"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgProductIcon"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+            <EditText
+                android:id="@+id/etProductName"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="#fafafa"
+                android:textColor="#424242"
+                android:hint="Product Name"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

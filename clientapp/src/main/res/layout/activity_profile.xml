@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dawcyn.africdecoration.Profile">
+
+    <FrameLayout
+        android:id="@+id/frameProfileBanner"
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+
+        <FrameLayout
+            android:layout_margin="5dp"
+            android:background="@drawable/profile_bg2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/frameProfileIcon"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/circle_while"
+                android:paddingTop="20dp"
+                android:paddingEnd="25dp"
+                android:orientation="vertical"
+                android:paddingStart="19dp"
+                android:paddingBottom="20dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:src="@drawable/profile_icon"
+                    android:layout_height="100dp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:layout_below="@+id/frameProfileBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Emeka"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="AFRICAN DESIGNER"
+            android:textAllCaps="true"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:textAlignment="center"
+            android:text="Edit"
+            tools:ignore="HardcodedText"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:background="@drawable/buttonstyle1"
+            android:layout_width="150dp"
+            android:textColor="#fff"
+            android:textStyle="normal"
+            android:textSize="19sp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</RelativeLayout>
